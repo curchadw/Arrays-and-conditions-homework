@@ -15,6 +15,32 @@ const listSubjects = () =>{
   
 }
 
+
+
 const favoriteStudy = (subject) =>{
-  subject === myStudies[0] ? console.log('One of my favorite subjects') : console.log('Eh...it\'s not one of my favorites')
+   if(subject === myStudies[0]){
+    console.log('One of my favorite subjects')
+  }else{
+    if(subject === '' ||myStudies[0] === false){
+      console.log('Either you entered a empty subject')
+    }
+    else{
+      console.log('Eh...it\'s not one of my favorites')
+    }
+  }
+
+  if(subject === myStudies[0]) {
+    return 'One of my favorite subjects'
+  }
+  else{
+      if(subject === ''){
+         return 'Nothing to judge'
+      }else{
+         
+          return "Eh...it's not one of my favorites" 
+       
+      }
+  }
+
+
 }
